@@ -10,5 +10,21 @@
     "meanbookstore"
   ],
   "author": "KungfuPander",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KungfuPanders/MEAN-BookStore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KungfuPanders/MEAN-BookStore/issues"
+  },
+  "homepage": "https://github.com/KungfuPanders/MEAN-BookStore#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "compress": "^0.99.0",
+    "compression": "^1.6.2",
+    "express": "^4.13.4",
+    "method-override": "^2.3.5",
+    "morgan": "^1.7.0"
+  }
 }
