@@ -1,4 +1,5 @@
-﻿var express = require('express'),
+﻿
+var express = require('express'),
     morgan = require('morgan'),
     compress = require('compression'),
     bodyParser = require('body-parser'),
@@ -26,5 +27,6 @@ module.exports = function () {
     app.use(express.static('./public'));
 
     require('../app/routes/index.server.routes.js')(app);
+    require('../app/routes/user.server.routes.js')(app);
     return app;
 }
