@@ -1,0 +1,21 @@
+{
+  "name": "bookstore",
+  "description": "mean for book store",
+  "main": "index.js",
+  "authors": [
+    "KungfuPander"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "meanbookstore"
+  ],
+  "homepage": "https://github.com/KungfuPanders/MEAN-BookStore",
+  "private": true,
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "toastr": "^2.1.2",
+    "angular": "^1.5.6",
+    "angular-resource": "^1.5.6",
+    "angular-route": "^1.5.6"
+  }
+}

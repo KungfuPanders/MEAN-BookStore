@@ -23,10 +23,16 @@
     "body-parser": "^1.15.1",
     "compress": "^0.99.0",
     "compression": "^1.6.2",
+    "cshtml": "^1.0.6",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
+    "jade": "^1.11.0",
     "method-override": "^2.3.5",
-    "mongoose": "^4.4.17",
-    "morgan": "^1.7.0"
+    "mongoose": "^4.4.20",
+    "morgan": "^1.7.0",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
   }
 }

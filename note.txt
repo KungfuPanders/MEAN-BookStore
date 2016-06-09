@@ -1,0 +1,43 @@
+----------// using npm for server-side in NodeJS //----------
+
+npm init
+
+-- adding express
+npm install express --save
+
+-- adding jade
+npm install jade --save
+
+-- adding nodemon for deploy,(don't stop server) --
+npm install nodemon --save-dev
+
+-- adding stylus
+npm install stylus --save
+
+-- adding morgan
+npm install morgan --save
+
+-- adding body-parser
+npm install body-parser --save
+
+-- adding mongoose
+npm install mongoose --save
+
+
+----------// using bower for client-side in NodeJS //----------
+
+-- adding bower for client-side dependence (need to install git before install bower)
+npm install bower -g / npm install bower --save-dev
+
+bower init
+
+-- adding jquery
+bower install jquery --save
+
+-- adding toastr
+bower install toastr --save
+
+-- adding angular
+bower install angular --save
+bower install angular-resource --save
+bower install angular-route --save
