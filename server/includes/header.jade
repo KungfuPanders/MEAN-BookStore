@@ -1,0 +1,87 @@
+.header
+    .header_top
+        .container
+            .header_top_left
+                p customer care : 0-888-23-5467
+            .header_top_right
+                .lang_list
+                    select.dropdown(tabindex='4')
+                        option.label(value='') $ Us
+                        option(value='1') Dollar
+                        option(value='2') Euro
+                ul.header_user_info
+                    a.login(href='login.html')
+                        i.user
+                        li.user_desc My Account
+                    .clearfix
+                // start search
+                .search-box
+                    #sb-search.sb-search
+                        form
+                            input#search.sb-search-input(placeholder='Enter your search term...', type='search', name='search')
+                            input.sb-search-submit(type='submit', value='')
+                            span.sb-icon-search
+                // --search-scripts--
+                script(src='js/classie.js')
+                script(src='js/uisearch.js')
+                script.
+                    new UISearch(document.getElementById('sb-search'));
+                // --//search-scripts--
+                .clearfix
+            .clearfix
+    .header_bottom
+        .container
+            .logo
+                a(href='index.html')
+                    img(src='images/logo.png', alt='')
+            .header_bottom_right
+                .h_menu4
+                    // start h_menu4
+                    a.toggleMenu(href='#') Menu
+                    ul.nav
+                        li.active
+                            a(href='index.html') New
+                        li
+                            a(href='products.html') Designers
+                        li
+                            a(href='products.html') Women
+                            ul
+                                li
+                                    a(href='products.html') Accessories
+                                li
+                                    a(href='products.html') Ethnic Apparel
+                                li
+                                    a(href='products.html') Footwear
+                                li
+                                    a(href='products.html') Grooming
+                                li
+                                    a(href='products.html') Handbags
+                                li
+                                    a(href='products.html') Jewellery
+                        li
+                            a(href='products.html') Men
+                            ul
+                                li
+                                    a(href='products.html') Accessories
+                                li
+                                    a(href='products.html') Footwear
+                                li
+                                    a(href='products.html') Apparel
+                        li
+                            a(href='products.html') Clearence
+                    script(type='text/javascript', src='js/nav.js')
+                // end h_menu4
+                .shopping_cart
+                    ul.shopping_cart_top
+                        a(href='#')
+                            li.shop_left Your cart
+                            li.shop_right
+                                img(src='images/arrow1.png', alt='')
+                            .clearfix
+                    ul.shopping_bag
+                        a(href='#')
+                            li.bag_left
+                                img(src='images/bag.png', alt='')
+                            li.bag_right  0 Items | $ 0
+                            .clearfix
+                .clearfix

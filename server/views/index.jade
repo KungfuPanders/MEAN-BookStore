@@ -2,4 +2,8 @@ extends ../includes/layout
 
 block main-content
     section.content
-        div(ng-view)
+        include ../includes/header
+        .contact
+            .container
+                div(ng-view)
+        include ../includes/footer

@@ -41,3 +41,9 @@ bower install toastr --save
 bower install angular --save
 bower install angular-resource --save
 bower install angular-route --save
+
+
+----------// some issue //-------------
+
+In Windows, paste this command in run window
+chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
