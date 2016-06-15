@@ -1,0 +1,42 @@
+extends ../../../server/includes/layout
+
+block main-content
+    include ../../../server/includes/header
+    section.content
+        ul.breadcrumbs
+            .container
+                li.home
+                    a(href='index.html', title='Go to Home Page')
+                        img(src='images/home.png', alt='')
+                    span >
+                li.home
+                    | Women 
+                    span >
+                li.home
+                    span.red  Login 
+        .contact
+            .container
+                .account_grid
+                    .col-md-6.login-left
+                        h3 NEW CUSTOMERS
+                        p
+                            | By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.
+                        a.acount-btn(href='register.html') Create an Account
+                    .col-md-6.login-right
+                        h3 REGISTERED CUSTOMERS
+                        p If you have an account with us, please log in.
+                        form
+                            div
+                                span
+                                    | Email Address
+                                    label *
+                                input(type='text')
+                            div
+                                span
+                                    | Password
+                                    label *
+                                input(type='text')
+                            a.forgot(href='#') Forgot Your Password?
+                            input(type='submit', value='Login')
+                    .clearfix
+    include ../../../server/includes/footer

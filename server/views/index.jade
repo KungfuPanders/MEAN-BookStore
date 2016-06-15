@@ -1,9 +1,9 @@
 extends ../includes/layout
 
 block main-content
+    include ../includes/header
     section.content
-        include ../includes/header
         .contact
             .container
                 div(ng-view)
-        include ../includes/footer
+    include ../includes/footer

@@ -1,0 +1,326 @@
+extends ../../../server/includes/layout
+
+block main-content
+    include ../../../server/includes/header
+    section.content
+        ul.breadcrumbs
+            .container
+                li.home
+                    a(href='index.html', title='Go to Home Page')
+                        img(src='images/home.png', alt='')
+                    span >
+                li.home
+                    | Women 
+                    span >
+                li.home
+                    span.red  Clothes 
+        .product_banner
+            .container
+                .wmuSlider.example1
+                    .wmuSliderWrapper
+                        article(style='position: absolute; width: 100%; opacity: 0;')
+                            .banner-wrap
+                                .banner_left
+                                    img.img-responsive(src='images/product.png', alt='')
+                                .banner_right
+                                    h1 Open Heart Top
+                                    p.p1 $13.95
+                                    p.p2
+                                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+                                    a.btn1.btn2.btn-primary1(href='#')
+                                        span Add To Cart
+                                        img(src='images/plus.png', alt='')
+                                .clearfix
+                        article(style='position: relative; width: 100%; opacity: 1;')
+                            .banner-wrap
+                                .banner_left
+                                    img.img-responsive(src='images/product.png', alt='')
+                                .banner_right
+                                    h1 Tincidunt ut
+                                    p.p1 $10.95
+                                    p.p2
+                                        | sed diam nonummy nibh euismod tincidunt Lorem ipsum dolor sit amet, consectetuer adipiscing elit,  dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+                                    a.btn1.btn2.btn-primary1(href='#')
+                                        span Add To Cart
+                                        img(src='images/plus.png', alt='')
+                                .clearfix
+                        article(style='position: absolute; width: 100%; opacity: 0;')
+                            .banner-wrap
+                                .banner_left
+                                    img.img-responsive(src='images/product.png', alt='')
+                                .banner_right
+                                    h1 Magna Aliquam
+                                    p.p1 $08.95
+                                    p.p2
+                                        | Dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                                    a.btn1.btn2.btn-primary1(href='#')
+                                        span Add To Cart
+                                        img(src='images/plus.png', alt='')
+                                .clearfix
+                    a.wmuSliderPrev Previous
+                    a.wmuSliderNext Next
+                    ul.wmuSliderPagination
+                        li
+                            a(href='#') 0
+                        li
+                            a(href='#') 1
+                        li
+                            a.wmuActive(href='#') 2
+                script(src='js/jquery.wmuSlider.js')
+                script.
+                    $('.example1').wmuSlider();
+        .products_top
+            .container
+                .col-md-9
+                    .mens-toolbar
+                        .sort
+                            .sort-by
+                                label Sort by
+                                select
+                                    option(value='')
+                                        | Position
+                                    option(value='')
+                                        | Name
+                                    option(value='')
+                                        | Price
+                                a(href='')
+                                    img.v-middle(src='images/arrow2.gif', alt='')
+                        .pages
+                            .limiter.visible-desktop
+                                label Showing 1-12 of 347 results
+                            ul.dc_pagination.dc_paginationA.dc_paginationA06
+                                li
+                                    a(href='#') 1
+                                li
+                                    a(href='#') 2
+                                li
+                                    a(href='#') 3
+                                li
+                                    a.current(href='#')
+                            .clearfix
+                        .clearfix
+                    .product_box1
+                        ul.grid-4
+                            li
+                                a(href='single.html')
+                                    .view.view-first
+                                        img.img-responsive(src='images/p1.jpg', alt='')
+                                        .product_mask
+                                        .tab_desc1
+                                            h3
+                                                a(href='#') Feel Tank
+                                            p $59.95
+                                            a.btn1.btn-primary1(href='#')
+                                                span Add To Cart
+                                                img(src='images/plus.png', alt='')
+                    li
+                        a(href='single.html')
+                            .view.view-first
+                                img.img-responsive(src='images/p2.jpg', alt='')
+                                .product_mask
+                                .tab_desc1
+                                    h3
+                                        a(href='#') Feel Tank
+                                    p $59.95
+                                    a.btn1.btn-primary1(href='#')
+                                        span Add To Cart
+                                        img(src='images/plus.png', alt='')
+                li.grid-4_last
+                    a(href='single.html')
+                        .view.view-first
+                            img.img-responsive(src='images/p3.jpg', alt='')
+                            .product_mask
+                            .tab_desc1
+                                h3
+                                    a(href='#') Feel Tank
+                                p $59.95
+                                a.btn1.btn-primary1(href='#')
+                                    span Add To Cart
+                                    img(src='images/plus.png', alt='')
+            .clearfix
+        .product_box1
+            ul.grid-4
+                li
+                    a(href='single.html')
+                        .view.view-first
+                            img.img-responsive(src='images/p4.jpg', alt='')
+                            .product_mask
+                            .tab_desc1
+                                h3
+                                    a(href='#') Feel Tank
+                                p $59.95
+                                a.btn1.btn-primary1(href='#')
+                                    span Add To Cart
+                                    img(src='images/plus.png', alt='')
+        li
+            a(href='single.html')
+                .view.view-first
+                    img.img-responsive(src='images/p5.jpg', alt='')
+                    .product_mask
+                    .tab_desc1
+                        h3
+                            a(href='#') Feel Tank
+                        p $59.95
+                        a.btn1.btn-primary1(href='#')
+                            span Add To Cart
+                            img(src='images/plus.png', alt='')
+        li.grid-4_last
+            a(href='single.html')
+                .view.view-first
+                    img.img-responsive(src='images/p6.jpg', alt='')
+                    .product_mask
+                    .tab_desc1
+                        h3
+                            a(href='#') Feel Tank
+                        p $59.95
+                        a.btn1.btn-primary1(href='#')
+                            span Add To Cart
+                            img(src='images/plus.png', alt='')
+        .clearfix
+        .product_box1
+            ul.grid-4
+                li
+                    a(href='single.html')
+                        .view.view-first
+                            img.img-responsive(src='images/p7.jpg', alt='')
+                            .product_mask
+                            .tab_desc1
+                                h3
+                                    a(href='#') Feel Tank
+                                p $59.95
+                                a.btn1.btn-primary1(href='#')
+                                    span Add To Cart
+                                    img(src='images/plus.png', alt='')
+        li
+            a(href='single.html')
+                .view.view-first
+                    img.img-responsive(src='images/p8.jpg', alt='')
+                    .product_mask
+                    .tab_desc1
+                        h3
+                            a(href='#') Feel Tank
+                        p $59.95
+                        a.btn1.btn-primary1(href='#')
+                            span Add To Cart
+                            img(src='images/plus.png', alt='')
+        li.grid-4_last
+            a(href='single.html')
+                .view.view-first
+                    img.img-responsive(src='images/p9.jpg', alt='')
+                    .product_mask
+                    .tab_desc1
+                        h3
+                            a(href='#') Feel Tank
+                        p $59.95
+                        a.btn1.btn-primary1(href='#')
+                            span Add To Cart
+                            img(src='images/plus.png', alt='')
+        .clearfix
+        .pages
+            .limiter.visible-desktop
+                label Showing 1-12 of 347 results
+            ul.dc_pagination.dc_paginationA.dc_paginationA06
+                li
+                    a(href='#') 1
+                li
+                    a(href='#') 2
+                li
+                    a(href='#') 3
+                li
+                    a.current(href='#')
+            .clearfix
+        .col-md-3.product_right
+            h3.m_1 Categories
+            select.dropdown(tabindex='10', data-settings='{"wrapperClass":"metro"}')
+                option(value='0') New
+                option(value='1') tempor
+                option(value='2') congue
+                option(value='3') mazim
+                option(value='4') mutationem
+                option(value='5') hendrerit
+                option(value='5')
+                option(value='5')
+            select.dropdown(tabindex='50', data-settings='{"wrapperClass":"metro"}')
+                option(value='1') Designers
+                option(value='2') Sub Category1
+                option(value='3') Sub Category2
+                option(value='4') Sub Category3
+            select.dropdown(tabindex='8', data-settings='{"wrapperClass":"metro"}')
+                option(value='1') Women
+                option(value='2') Sub Category1
+                option(value='3') Sub Category2
+                option(value='4') Sub Category3
+            select.dropdown(tabindex='8', data-settings='{"wrapperClass":"metro"}')
+                option(value='1') Men
+                option(value='2') Sub Category1
+                option(value='3') Sub Category2
+                option(value='4') Sub Category3
+            select.dropdown(tabindex='8', data-settings='{"wrapperClass":"metro"}')
+                option(value='1') Clearance
+                option(value='2') Sub Category1
+                option(value='3') Sub Category2
+                option(value='4') Sub Category3
+            ul.size
+                h3 Select your size
+                li
+                    a(href='#') XS
+                li
+                    a(href='#') S
+                li
+                    a(href='#') M
+                li
+                    a(href='#') L
+                li
+                    a(href='#') XL
+            h3.m_1 On Sale
+            .sale_grid
+                ul.grid_1
+                    li.grid_1-img
+                        img.img-responsive(src='images/s1.jpg', alt='')
+                    li.grid_1-desc
+                        h4
+                            a(href='#') Pintuck Tank
+                        p $45.55
+                    .clearfix
+                ul.grid_1
+                    li.grid_1-img
+                        img.img-responsive(src='images/s2.jpg', alt='')
+                    li.grid_1-desc
+                        h4
+                            a(href='#') Pintuck Tank
+                        p $45.55
+                    .clearfix
+                ul.grid_1
+                    li.grid_1-img
+                        img.img-responsive(src='images/s3.jpg', alt='')
+                    li.grid_1-desc
+                        h4
+                            a(href='#') Pintuck Tank
+                        p $45.55
+                    .clearfix
+            h3.m_1 Featured Products
+            ul.grid_1
+                li.grid_1-img
+                    img.img-responsive(src='images/s4.jpg', alt='')
+                li.grid_1-desc
+                    h4
+                        a(href='#') Pintuck Tank
+                    p $45.55
+                .clearfix
+            ul.grid_1
+                li.grid_1-img
+                    img.img-responsive(src='images/s5.jpg', alt='')
+                li.grid_1-desc
+                    h4
+                        a(href='#') Pintuck Tank
+                    p $45.55
+                .clearfix
+            ul.grid_1
+                li.grid_1-img
+                    img.img-responsive(src='images/s6.jpg', alt='')
+                li.grid_1-desc
+                    h4
+                        a(href='#') Pintuck Tank
+                    p $45.55
+                .clearfix
+    include ../../../server/includes/footer
