@@ -42,6 +42,8 @@ bower install angular --save
 bower install angular-resource --save
 bower install angular-route --save
 
+-----------// using Heroku to deploy mongoDB //-------------
+https://mlab.com/home
 
 ----------// some issue //-------------
 
