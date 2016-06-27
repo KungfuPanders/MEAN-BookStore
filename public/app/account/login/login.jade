@@ -1,16 +1,8 @@
-extends ../../../server/includes/layout
-
-block main-content
-    include ../../../server/includes/header
-    section.content
-        ul.breadcrumbs
+ul.breadcrumbs
             .container
                 li.home
-                    a(href='index.html', title='Go to Home Page')
+                    a(href='/', title='Go to Home Page')
                         img(src='images/home.png', alt='')
-                    span >
-                li.home
-                    | Women 
                     span >
                 li.home
                     span.red  Login 
@@ -21,7 +13,7 @@ block main-content
                         h3 NEW CUSTOMERS
                         p
                             | By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.
-                        a.acount-btn(href='register.html') Create an Account
+                        a.acount-btn(href='/register') Create an Account
                     .col-md-6.login-right
                         h3 REGISTERED CUSTOMERS
                         p If you have an account with us, please log in.
@@ -39,4 +31,3 @@ block main-content
                             a.forgot(href='#') Forgot Your Password?
                             input(type='submit', value='Login')
                     .clearfix
-    include ../../../server/includes/footer

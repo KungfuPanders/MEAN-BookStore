@@ -42,8 +42,23 @@ bower install angular --save
 bower install angular-resource --save
 bower install angular-route --save
 
+-----------// using Heroku to deploy mongoDB //-------------
+https://mlab.com/home
+
+----------// set NODE_ENV //-----------------
+
+In npm command line, can switch between environment:
+
+set NODE_ENV=development
+
+or
+
+set NODE_ENV=production
 
 ----------// some issue //-------------
 
 In Windows, paste this command in run window
 chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+
+---------// some note //---------------
+NodeJS - a Common.JS Module Implementation
